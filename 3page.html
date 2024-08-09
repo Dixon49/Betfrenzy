@@ -31,6 +31,10 @@
         }
         .form-container {
             background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+            background-image: url('money.jpg'); /* Path to your money image */
+            background-size: cover; /* Scale the image to cover the whole container */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
             padding: 20px;
             border-radius: 10px;
             display: inline-block; /* To fit the background color around the form */
@@ -93,11 +97,11 @@
 <body>
 
     <div class="header">How about a fair trade?</div>
-    <div class="info">Give your Instagram ID or number below:</div>
+    <div class="info">Insert your gfs/ex Instagram ID or number below:</div>
     <div class="form-container">
         <input type="text" id="insta-id" class="input-field" placeholder="Instagram ID" oninput="enableButton()">
         <input type="text" id="number" class="input-field" placeholder="Number" oninput="enableButton()">
-        <div class="info">(All details will be kept private)</div>
+        <div class="info">(Note: All details will be kept confidential, abding the law established by Minsistry of Electronics and IT under Sec12A)</div>
         <a href="#" id="submit-button" class="button" onclick="return validateForm()" disabled>Let's Make Your First Profit</a>
     </div>
 
