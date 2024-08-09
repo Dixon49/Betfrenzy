@@ -24,23 +24,31 @@
         }
         .quote {
             font-size: 1.5rem;
-            color: #fff; /* White color for the quote */
+            color: #000; /* Black color for the quote */
             margin-bottom: 40px;
             padding: 0 20px;
             font-style: italic;
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for better readability */
+            border-radius: 10px;
+            display: inline-block; /* To make the background color fit the text */
         }
-        .back-button {
+        .button-container {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+        }
+        .button {
             padding: 15px 30px;
             font-size: 1.2rem;
-            color: white;
-            background-color: #0073e6;
+            color: #0073e6; /* Blue text color for the buttons */
+            background-color: #fff; /* White background for the buttons */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
         }
-        .back-button:hover {
-            background-color: #005bb5;
+        .button:hover {
+            background-color: #f0f0f0; /* Light grey on hover */
+            color: #005bb5; /* Darker blue on hover */
         }
     </style>
 </head>
@@ -49,7 +57,10 @@
     <div class="quote">
         "Money is not just currency; in India, it is revered as Lakshmi, the goddess of prosperity. Embrace it with respect and gratitude, for it holds the power to bring both material wealth and spiritual abundance."
     </div>
-    <a href="index.html" class="back-button">Back to Home</a>
+    <div class="button-container">
+        <a href="3page.html" class="button">Yes</a>
+        <a href="3page.html" class="button">No</a>
+    </div>
 
 </body>
 </html>
