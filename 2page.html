@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #000; /* Fallback color */
-            color: #fff;
+            color: #000; /* Default text color to black */
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -32,6 +32,11 @@
             border-radius: 10px;
             display: inline-block; /* To make the background color fit the text */
         }
+        .question {
+            font-size: 1.2rem;
+            color: #000; /* Black color for the question text */
+            margin: 40px 0; /* Space between the quote and the question */
+        }
         .button-container {
             display: flex;
             gap: 20px; /* Space between buttons */
@@ -39,7 +44,7 @@
         .button {
             padding: 15px 30px;
             font-size: 1.2rem;
-            color: #0073e6; /* Blue text color for the buttons */
+            color: #000; /* Black text color for the buttons */
             background-color: #fff; /* White background for the buttons */
             border: none;
             border-radius: 5px;
@@ -48,18 +53,21 @@
         }
         .button:hover {
             background-color: #f0f0f0; /* Light grey on hover */
-            color: #005bb5; /* Darker blue on hover */
+            color: #000; /* Black text color on hover */
         }
     </style>
 </head>
 <body>
 
     <div class="quote">
-        "Money is not just currency; in India, it is revered as Lakshmi, the goddess of prosperity. Embrace it with respect and gratitude, for it holds the power to bring both material wealth and spiritual abundance."
+        "Embrace Money with respect and gratitude, for it holds the power to bring both material wealth and spiritual abundance."
+    </div>
+    <div class="question">
+        Do you wish to continue?
     </div>
     <div class="button-container">
-        <a href="3page.html" class="button">Yes</a>
-        <a href="3page.html" class="button">No</a>
+        <a href="third_page.html" class="button">Yes</a>
+        <a href="third_page.html" class="button">No</a>
     </div>
 
 </body>
