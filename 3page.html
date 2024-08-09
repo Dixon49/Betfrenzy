@@ -24,12 +24,12 @@
         .header {
             font-size: 3rem;
             font-weight: bold;
-            color: #000; /* Black color for the text */
+            color: #fff; /* White color for the text */
             margin-bottom: 20px;
         }
         .info {
             font-size: 1.2rem;
-            color: #000; /* Black color for the info text */
+            color: #fff; /* White color for the info text */
             margin-bottom: 20px;
         }
         .form-container {
@@ -86,9 +86,8 @@
                 alert('Please enter your Instagram ID or Number first.');
                 return false;
             }
-            // Proceed with form submission or redirection
-            // For example, redirecting to a new page
-            window.location.href = 'next_page.html'; // Replace with your actual URL
+            // Redirect to the fourth page
+            window.location.href = '4page.html'; // Make sure this path is correct
             return false; // Prevent default form submission
         }
     </script>
@@ -100,7 +99,7 @@
     <div class="form-container">
         <input type="text" id="insta-id" class="input-field" placeholder="Instagram ID" oninput="enableButton()">
         <input type="text" id="number" class="input-field" placeholder="Number" oninput="enableButton()">
-        <div class="info">(Note: All details will be kept confidential, abiding the law established by Minsistry of Electronics and IT under Sec12A)</div>
+        <div class="info">(Note: All details will be kept confidential, abiding the law established by the Ministry of Electronics and IT under Sec12A)</div>
         <a href="#" id="submit-button" class="button" onclick="return validateForm()" disabled>Let's Make Your First Profit</a>
     </div>
 
